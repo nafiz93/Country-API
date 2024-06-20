@@ -1,0 +1,17 @@
+#parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    grid-row-gap: 20PX;
+}
+
+.countriesDiv {
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    width: 300px;
+    padding-left: 50px;
+}
+
+.img {
+    width: 200px;
+}

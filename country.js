@@ -27,3 +27,19 @@ const display = countries => {
     });
 };
 
+const show = (img, name) => {
+    const details = document.getElementById("details");
+
+    const existingDiv = details.querySelector('#work');
+
+    if (existingDiv) {
+        details.removeChild(existingDiv);
+    }
+
+    const image = document.createElement('div');
+    image.id = 'work';
+
+    image.innerHTML = `<h1>${name}</h1>
+        <img src="${img}" alt="">`;
+    details.appendChild(image);
+};

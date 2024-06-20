@@ -43,3 +43,10 @@ const show = (img, name) => {
         <img src="${img}" alt="">`;
     details.appendChild(image);
 };
+
+const showInTheCurrentDiv = button => {
+    parentDiv = button.parentNode;
+    const image = parentDiv.querySelector('img');
+    image.style.display = 'block'
+
+}
